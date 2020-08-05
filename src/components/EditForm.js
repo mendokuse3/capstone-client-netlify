@@ -10,7 +10,7 @@ export default class Edit extends Component {
 
     handleSubmit = (event, props) => {
         event.preventDefault();
-        fetch(`http://localhost:3000/notes/${this.state.id}`, {
+        fetch(`https://nervous-feynman-b969cc.netlify.app/notes/${this.state.id}`, {
             body: JSON.stringify(this.state),
             method: "PUT",
             headers: {
