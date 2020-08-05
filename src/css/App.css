@@ -1,0 +1,31 @@
+@media (min-width: 700px){
+    .App {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    
+  
+    .note-container {
+      flex-direction: column;
+      width: 35%;
+      max-width: 450px;
+    }
+    
+    .item-card {
+        width: 100%;
+    }
+  
+}
+
+@media (min-width: 1100px){
+
+    .note-container {
+        width: 45%;
+    }
+
+    .tracker-area {
+        margin-top: 10%;
+    }
+}

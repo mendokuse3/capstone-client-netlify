@@ -1,0 +1,35 @@
+const itemData = {
+    bomb: ['bomb'],
+    bombos: ['bombos'],
+    book: ['book'],
+    boomerang: ['boomerang1', 'boomerang2', 'boomerang3'],
+    boots: ['boots'],
+    bottle: ['bottle1', 'bottle2', 'bottle3', 'bottle4'],
+    bow: ['bow', 'bow1', 'bow2', 'bow3'],
+    byrna: ['byrna'],
+    cape: ['cape'],
+    ether: ['ether'],
+    firerod: ['firerod'],
+    flippers: ['flippers'],
+    flute: ['flute'],
+    gloves: ['glove1', 'glove2'],
+    hammer: ['hammer'],
+    hookshot: ['hookshot'],
+    icerod: ['icerod'],
+    lantern: ['lantern'],
+    mirror: ['mirror'],
+    moonPearl: ['moonPearl'],
+    mushroom: ['mushroom'],
+    powder: ['powder'],
+    net: ['net'],
+    quake: ['quake'],
+    shield: ['shield1', 'shield2', 'shield3'],
+    shovel: ['shovel'],
+    somaria: ['somaria'],
+    sword: ['sword1', 'sword2', 'sword3', 'sword4'],
+    tunic: ['tunic1', 'tunic2', 'tunic3'],
+    magic: ['magic1']
+    
+}
+
+export default itemData;

@@ -1,0 +1,310 @@
+
+.tracker-area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 15%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.item, .dungeon {
+    height: calc(100% / 6);
+    width: calc(100% / 7);
+    background-repeat: no-repeat;
+}
+
+.dungeon .tracker-element {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.tracker-element:hover {
+    cursor: pointer;
+}
+
+.item {
+    background-size: contain;
+    background-color: black;
+}
+
+.dungeon {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.dungeon-reward {
+    background-size: contain;
+}
+
+.does-not-have {
+    filter: grayscale(100%)
+}
+
+.reset-button {
+    margin: 3% auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.reset-button:hover {
+    cursor: pointer;
+    background-color: rgb(197, 194, 194);
+}
+
+
+.bomb {
+background-image: url('../assets/items/bomb.png')
+}
+
+.bombos {
+background-image: url('../assets/items/bombos.png');
+}
+
+.book {
+background-image: url('../assets/items/book.png');
+}
+
+.boomerang1, .blueBoomerang:not(.redBoomerang) {
+background-image: url('../assets/items/boomerang1.png');
+}
+
+.boomerang2, .redBoomerang:not(.blueBoomerang) {
+background-image: url('../assets/items/boomerang2.png');
+}
+
+.boomerang3, .blueBoomerang.redBoomerang {
+background-image: url('../assets/items/boomerang3.png');
+}
+
+.boots {
+background-image: url('../assets/items/boots.png');
+}
+
+.bottle0 {
+background-image: url('../assets/items/bottle0.png');
+}
+
+.bottle1 {
+background-image: url('../assets/items/bottle1.png');
+}
+
+.bottle2 {
+background-image: url('../assets/items/bottle2.png');
+}
+
+.bottle3 {
+background-image: url('../assets/items/bottle3.png');
+}
+
+.bottle4 {
+background-image: url('../assets/items/bottle4.png');
+}
+
+.bow {
+background-image: url('../assets/items/bow.png');
+}
+
+.bow1 {
+background-image: url('../assets/items/bow1.png');
+}
+.bow2 {
+background-image: url('../assets/items/bow2.png');
+}
+.bow3 {
+background-image: url('../assets/items/bow3.png');
+}
+
+.byrna {
+background-image: url('../assets/items/byrna.png');
+}
+
+.cape {
+background-image: url('../assets/items/cape.png');
+}
+
+.ether {
+background-image: url('../assets/items/ether.png');
+}
+
+.firerod {
+background-image: url('../assets/items/firerod.png');
+}
+
+.flippers {
+background-image: url('../assets/items/flippers.png');
+}
+
+.flute {
+background-image: url('../assets/items/flute.png');
+}
+
+.glove1, .power {
+background-image: url('../assets/items/glove1.png');
+}
+
+.glove2, .titan {
+background-image: url('../assets/items/glove2.png');
+}
+
+.hammer {
+background-image: url('../assets/items/hammer.png');
+}
+
+.hookshot {
+background-image: url('../assets/items/hookshot.png');
+}
+
+.icerod {
+background-image: url('../assets/items/icerod.png');
+}
+
+.lantern {
+background-image: url('../assets/items/lantern.png');
+}
+
+.mirror {
+background-image: url('../assets/items/mirror.png');
+}
+
+.moonPearl {
+background-image: url('../assets/items/moonpearl.png');
+}
+
+.mushroom {
+background-image: url('../assets/items/mushroom.png');
+}
+
+.net {
+background-image: url('../assets/items/net.png');
+}
+
+.powder {
+background-image: url('../assets/items/powder.png');
+}
+
+.quake {
+background-image: url('../assets/items/quake.png');
+}
+
+.shield1 {
+background-image: url('../assets/items/shield1.png');
+}
+
+.shield2 {
+background-image: url('../assets/items/shield2.png');
+}
+
+.shield3 {
+background-image: url('../assets/items/shield3.png');
+}
+
+.shovel {
+background-image: url('../assets/items/shovel.png');
+}
+
+.silver-arrows {
+background-image: url('../assets/items/bow1.png');
+}
+
+.somaria {
+background-image: url('../assets/items/somaria.png');
+}
+
+.sword1 {
+background-image: url('../assets/items/sword1.png');
+}
+
+.sword2 {
+background-image: url('../assets/items/sword2.png');
+}
+
+.sword3 {
+background-image: url('../assets/items/sword3.png');
+}
+
+.sword4 {
+background-image: url('../assets/items/sword4.png');
+}
+
+.tunic1 {
+background-image: url('../assets/items/tunic1.png');
+}
+
+.tunic2 {
+background-image: url('../assets/items/tunic2.png');
+}
+
+.tunic3 {
+background-image: url('../assets/items/tunic3.png');
+}
+
+.magic1 {
+background-image: url('../assets/items/magic1.png');
+}
+
+.magic2 {
+background-image: url('../assets/items/magic2.png');
+}
+
+/* write in background images for dungeons and etc files */
+/* dungeons */
+
+.EP {
+    background-image: url('../assets/dungeons/EP.png');
+}
+.DP {
+    background-image: url('../assets/dungeons/DP.png');
+}
+.TH {
+    background-image: url('../assets/dungeons/TH.png');
+}
+.PD {
+    background-image: url('../assets/dungeons/PD.png');
+}
+.SP {
+    background-image: url('../assets/dungeons/SP.png');
+}
+.SW {
+    background-image: url('../assets/dungeons/SW.png');
+}
+.TT {
+    background-image: url('../assets/dungeons/TT.png');
+}
+.IP {
+    background-image: url('../assets/dungeons/IP.png');
+}
+.MM {
+    background-image: url('../assets/dungeons/MM.png');
+}
+.TR {
+    background-image: url('../assets/dungeons/TR.png');
+}
+
+/* crystal/pendant/etc */
+
+.unknown {
+    background-image: url('../assets/overlay/reward-unknown.png');
+}
+.crystal {
+    background-image: url('../assets/overlay/reward-standardCrystal.png');
+}
+.fairyCrystal {
+    background-image: url('../assets/overlay/reward-fairyCrystal.png');
+}
+.greenPendant {
+    background-image: url('../assets/overlay/reward-greenPendant.png');
+}
+.standardPendant {
+    background-image: url('../assets/overlay/reward-standardPendant.png');
+}
+
+.gomode {
+    background-image: url('../assets/dungeons/gomode.png');
+}
+.agahnim0 {
+    background-image: url('../assets/bosses/agahnim0.png');
+}
