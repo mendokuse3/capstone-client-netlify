@@ -9,7 +9,7 @@ export default class Form extends Component {
 
     handleSubmit = (event, props) => {
         event.preventDefault();
-        fetch('https://nervous-feynman-b969cc.netlify.app/3000/notes', {
+        fetch('https://alttpr-capstone-server.herokuapp.com/notes', {
             body: JSON.stringify(this.state),
             method: "POST",
             headers: {
