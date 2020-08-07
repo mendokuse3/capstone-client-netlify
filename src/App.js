@@ -82,7 +82,7 @@ export default function App() {
 
   const resetTracker = () => {
     // setStateData(TrackerContext._currentValue.stateData)
-    console.log(resetStateData)
+    setStateData(resetStateData);
   }
 
   return (
