@@ -9,7 +9,7 @@ export const Notes = () => {
     const [selectedNote, setSelectedNote] = useState();
     const getData = () => {
         setLoading(true)
-        fetch('https://cors-anywhere.herokuapp.com/https://alttpr-capstone-server.herokuapp.com/notes')
+        fetch('https://alttpr-capstone-server.herokuapp.com/notes')
         .then(response => response.json())
         .then(data => {
             setState(data)
@@ -21,7 +21,7 @@ export const Notes = () => {
         })
     };
     const deleteNote = (id, index) => {
-        fetch(`https://cors-anywhere.herokuapp.com/https://alttpr-capstone-server.herokuapp.com/notes/${id}`, {method: 'DELETE'})
+        fetch(`https://alttpr-capstone-server.herokuapp.com/notes/${id}`, {method: 'DELETE'})
         .then(() => {
             setState([
                     ...state.slice(0,index), ...state.slice(index +1)

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Notes} from './components/Notes'
 import Items from './components/Items'
 import TrackerContext from './context/Context'
+import stateData from './stateData';
 
 import './css/App.css';
 
@@ -80,7 +81,8 @@ export default function App() {
   }
 
   const resetTracker = () => {
-    setStateData(TrackerContext._currentValue.stateData)
+    // setStateData(TrackerContext._currentValue.stateData)
+    console.log(stateData)
   }
 
   return (
