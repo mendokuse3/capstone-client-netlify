@@ -10,7 +10,7 @@ export default class Edit extends Component {
 
     handleSubmit = (event, props) => {
         event.preventDefault();
-        fetch(`https://alttpr-capstone-server.herokuapp.com/notes/${this.state.id}`, {
+        fetch(`https://cors-anywhere.herokuapp.com/https://alttpr-capstone-server.herokuapp.com/notes/${this.state.id}`, {
             body: JSON.stringify(this.state),
             method: "PUT",
             headers: {
