@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Notes} from './components/Notes'
 import Items from './components/Items'
 import TrackerContext from './context/Context'
-import resetStateData from './stateData';
 
 import './css/App.css';
 
