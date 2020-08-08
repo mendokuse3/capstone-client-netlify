@@ -82,7 +82,51 @@ export default function App() {
 
   const resetTracker = () => {
     // setStateData(TrackerContext._currentValue.stateData)
-    setStateData(resetStateData);
+    // setStateData(resetStateData);
+    setStateData({
+      ...TrackerContext._currentValue.stateData,
+      EP: {
+        ...TrackerContext._currentValue.stateData.EP,
+        counter: 0
+      },
+      DP: {
+        ...TrackerContext._currentValue.stateData.DP,
+        counter: 0
+      },
+      TH: {
+        ...TrackerContext._currentValue.stateData.TH,
+        counter: 0
+      },
+      PD: {
+        ...TrackerContext._currentValue.stateData.PD,
+        counter: 0
+      },
+      SP: {
+        ...TrackerContext._currentValue.stateData.SP,
+        counter: 0
+      },
+      SW: {
+        ...TrackerContext._currentValue.stateData.SW,
+        counter: 0
+      },
+      TT: {
+        ...TrackerContext._currentValue.stateData.TT,
+        counter: 0
+      },
+      IP: {
+        ...TrackerContext._currentValue.stateData.IP,
+        counter: 0
+      },
+      MM: {
+        ...TrackerContext._currentValue.stateData.MM,
+        counter: 0
+      },
+      TR: {
+        ...TrackerContext._currentValue.stateData.TR,
+        counter: 0
+      }
+    })
+    // currently a bug for dungeeons where upon reset it resets state for dungeons to have +1 count on reset
   }
 
   return (
