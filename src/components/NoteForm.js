@@ -9,7 +9,7 @@ export default class Form extends Component {
 
     handleSubmit = (event, props) => {
         event.preventDefault();
-        fetch('https://alttpr-capstone-server.herokuapp.com/notes', {
+        fetch('http://localhost:3000/notes', {
             body: JSON.stringify(this.state),
             method: "POST",
             headers: {
