@@ -9,7 +9,7 @@ export default class Form extends Component {
 
     handleSubmit = (event, props) => {
         event.preventDefault();
-        fetch('http://localhost:3000/notes', {
+        fetch('https://capstone-server-5lhp.onrender.com/notes', {
             body: JSON.stringify(this.state),
             method: "POST",
             headers: {
@@ -23,6 +23,8 @@ export default class Form extends Component {
                 item_name: '',
                 description: ''
             })
+        }).catch((err) =>{
+            console.log(err)
         })
     }
 

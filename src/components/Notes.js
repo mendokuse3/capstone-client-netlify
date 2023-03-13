@@ -9,7 +9,7 @@ export const Notes = () => {
     const [selectedNote, setSelectedNote] = useState();
     const getData = () => {
         setLoading(true)
-        fetch('http://localhost:3000/notes')
+        fetch('https://capstone-server-5lhp.onrender.com/notes')
         .then(response => response.json())
         .then(data => {
             setState(data)
@@ -21,7 +21,7 @@ export const Notes = () => {
         })
     };
     const deleteNote = (id, index) => {
-        fetch(`http://localhost:3000/notes/${id}`, {method: 'DELETE'})
+        fetch(`https://capstone-server-5lhp.onrender.com/notes/${id}`, {method: 'DELETE'})
         .then(() => {
             setState([
                     ...state.slice(0,index), ...state.slice(index +1)
